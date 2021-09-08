@@ -1,0 +1,11 @@
+@import 'helpers/vars';
+@import 'helpers/mixins';
+
+.social_links{
+    position: fixed;
+    left: 50px;
+    bottom: 25px;
+    font-family: $font2;
+    font-weight: 300;
+    @include responsive-font(16, 14);
+}

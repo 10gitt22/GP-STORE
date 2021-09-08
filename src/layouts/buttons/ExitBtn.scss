@@ -1,0 +1,19 @@
+@import 'helpers/vars';
+@import 'helpers/mixins';
+
+
+#exit_btn{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 11;
+    font-size: 20px;
+    font-family: $font2;
+    mix-blend-mode: difference;
+    color: #fff;
+    transition: .5s ease;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

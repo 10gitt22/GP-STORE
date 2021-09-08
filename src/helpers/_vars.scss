@@ -1,0 +1,52 @@
+
+//FONTS
+$font1: 'Cormorant Garamond', serif;
+$font2: 'Switzer', sans-serif;
+$font3: 'Luthon';
+$font4: 'LuthonScript';
+$font5: 'RebecaBlack';
+$font6: 'Arapey';
+$font6_thin: 'ArapeyThinDisplay';
+$font6_black: 'ArapeyBlackDisplay';
+$font6_bold: 'ArapeyBold';
+
+
+//THEME COLORS
+$preloader_background: rgb(0, 0, 0);
+$main_background: #fff;
+$font_color1: #fff;
+
+@font-face {
+    font-family: 'Luthon';
+    src: url('../assets/fonts/Luthon/Luthon\ Southard\ Serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LuthonScript';
+    src: url('../assets/fonts//Luthon/Luthon\ Southard\ Script.ttf');
+}
+
+@font-face {
+    font-family: 'RebecaBlack';
+    src: url('../assets/fonts/Rebeqa/Rebeqa-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Arapey';
+    src: url('../assets/fonts/arapey/fonts/static/otf/Arapey-Regular.otf');
+}
+
+@font-face {
+    font-family: 'ArapeyThinDisplay';
+    src: url('../assets/fonts/arapey/fonts/static/otf/Arapey-ThinDisplay.otf');
+}
+
+@font-face {
+    font-family: 'ArapeyBlackDisplay';
+    src: url('../assets/fonts/arapey/fonts/static/otf/Arapey-BlackDisplay.otf');
+}
+
+@font-face {
+    font-family: 'ArapeyBold';
+    src: url('../assets/fonts/arapey/fonts/static/otf/Arapey-Bold.otf');
+}

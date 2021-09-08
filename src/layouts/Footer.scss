@@ -1,0 +1,40 @@
+@import 'helpers/vars';
+@import 'helpers/mixins';
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: $font2;
+    padding: 50px;
+    border-top: 1px solid #666;
+    
+    .icon-logo{
+        background-color: #000;
+        .icon-back{
+            font-size: 150px;
+        }
+
+        .icon-top{
+            font-size: 50px;
+            top: 60%;
+            background-color: #000;
+            padding: 50px;
+            line-height: 0;
+        }
+    }
+
+    .footer-right{
+        display: flex;
+    }
+
+    .footer-block{
+        padding-left: 20px;
+        padding-right: 20px;
+
+        ul{
+            margin-top: 20px;
+        }
+    }
+}

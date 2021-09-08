@@ -1,0 +1,52 @@
+@import 'helpers/vars';
+@import 'helpers/mixins';
+
+.search-group{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .inp-field{
+        height: 40px;
+        width: 400px;
+        background-color: #fff;
+        border: 1px solid #222;
+        color: #222;
+        font-family: $font2;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+        outline: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .inp-field::placeholder{
+        color: #222;
+    }
+
+    #btn_search{
+        background-color: #222;
+        color: #fff;
+        border: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        outline: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .icon-search{
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+    }
+}

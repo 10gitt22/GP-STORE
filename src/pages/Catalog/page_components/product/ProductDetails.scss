@@ -1,0 +1,108 @@
+    @import 'helpers/vars';
+    @import 'helpers/mixins';
+
+    #product_details{
+        min-height: 100vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 125px;
+        padding-bottom: 50px;
+
+        .main-info{
+            display: flex;
+            width: 100%;
+            height: 600px;
+            box-shadow: 0 0 40px 50px #fff;
+            background-color: #fff;
+            color: #222;
+
+            .main-info-block{
+                width: 50%;
+                height: 100%;
+            }
+
+            .photo{
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .details{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                // align-items: flex-end;
+
+                .details_brand{
+                    font-size: 100px;
+                    font-family: $font3;
+                }
+
+                .details_model{
+                    font-size: 30px;
+                    font-family: $font1;
+                }
+
+                .details_price{
+                    position: absolute;
+                    top: 25px;
+                    right: 0;
+                    font-size: 50px;
+                    font-family: $font1;
+                }
+
+                .details_quantity{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    font-family: 20px;
+                    font-family: $font1;
+
+                    #quantity{
+                        border: 1px solid #ccc;
+                        width: 100px;
+                        height: 40px;
+                        margin-left: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        outline: none;
+                    }
+                }
+            }
+
+            .details_info{
+                width: 100%;
+                font-size: 20px;
+                font-family: $font1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                li{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .parameter{
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            #button_add{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: flex-end;
+                margin-top: 20px;
+                color: #fff;
+                font-family: $font2;
+                width: 200px;
+                height: 40px;
+                background-color: #222;
+            }
+        }
+
+        .main_photo{
+            height: 100%;
+        }
+    }

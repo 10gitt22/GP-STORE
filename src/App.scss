@@ -1,0 +1,132 @@
+@import 'helpers/vars';
+@import 'helpers/mixins';
+
+.App{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: difference;
+
+    &::before{
+        animation: grain 8s steps(10) infinite;
+        background-image: url('./assets/backgrounds/noize.png');
+        content: '';
+        height: 300%;
+        left: -50%;
+        opacity: 1;
+        z-index: -2;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        top: -100%;
+        width: 300%;
+    }  
+}
+
+h1{
+    font-family: $font5;
+    @include responsive-font(175, 150)
+}
+
+h2{
+    font-family: $font5;
+    @include responsive-font(100, 80)
+}
+
+h3{
+    font-family: $font2;
+    @include responsive-font(20, 16);
+}
+
+p{
+    font-family: $font2;
+    @include responsive-font(25, 16);
+}
+
+.all_products_link{
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    letter-spacing: 5px;
+    font-family: $font1;
+    @include responsive-font(22px, 16px);
+    color: #fff;
+    font-weight: 300;
+    mix-blend-mode: difference;
+
+    
+    &::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        transform: scaleX(0);
+        left: 0;
+        bottom: 0;
+        transition: .3s ease;
+    }
+    
+    &:hover{
+        &::after{
+            transform: scaleX(1);
+        }
+    }
+}
+
+
+.text-block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section_block{
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.section-title{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    line-height: 0.75;
+}
+
+.loader-spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 5;
+}
+
+.image-container{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0); }
+    10% { transform:translate(-5%, -10%); }
+    20% { transform:translate(-15%, 5%); }
+    30% { transform:translate(7%, -25%); }
+    40% { transform:translate(-5%, 25%); }
+    50% { transform:translate(-15%, 10%); }
+    60% { transform:translate(15%, 0%); }
+    70% { transform:translate(0%, 15%); }
+    80% { transform:translate(3%, 25%); }
+    90% { transform:translate(-10%, 10%); }
+}
